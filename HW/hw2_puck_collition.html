@@ -143,44 +143,6 @@ class Puck {
           let tmp = pucks[i].vel;
           pucks[i].vel = this.vel;
           this.vel = tmp;
-          /*if(this.pos.x>pucks[i].pos.x)
-          {
-          	this.pos.x+= Math.abs(tmp2.x);
-            pucks[i].pos.x-=Math.abs(tmp2.x);
-            
-          	if(this.pos.z>pucks[i].pos.x)
-            {
-            	this.pos.z+= Math.abs(tmp2.z);
-            	pucks[i].pos.z-=Math.abs(tmp2.z);
-            }
-            
-            else
-            {
-            	this.pos.z-= Math.abs(tmp2.z);
-            	pucks[i].pos.z+=Math.abs(tmp2.z);
-            }
-          }
-          
-          else
-          {
-          	this.pos.x-= Math.abs(tmp2.x);
-            pucks[i].pos.x+=Math.abs(tmp2.x);
-            
-          	if(this.pos.z>pucks[i].pos.x)
-            {
-            	this.pos.z+= Math.abs(tmp2.z);
-            	pucks[i].pos.z-=Math.abs(tmp2.z);
-            }
-            
-            else
-            {
-            	this.pos.z-= Math.abs(tmp2.z);
-            	pucks[i].pos.z+=Math.abs(tmp2.z);
-            }
-          }*/
-          
-          
-          
           
           
           
@@ -316,13 +278,7 @@ function init() {
    let puck4 = new Puck (new THREE.Vector3(40,2,40), new THREE.Vector3(0,0,40), ballMesh);
 	 pucks.push(puck4);
    
-   ballMesh = buildBallMesh (new THREE.Color().setHSL (Math.random(), 0.9, 0.4));
-   let puck5 = new Puck (new THREE.Vector3(-50,2,-100), new THREE.Vector3(40,0,0), ballMesh);
-	 pucks.push(puck5);
    
-   ballMesh = buildBallMesh (new THREE.Color().setHSL (Math.random(), 0.9, 0.4));
-   let puck6 = new Puck (new THREE.Vector3(40,2,40), new THREE.Vector3(0,0,40), ballMesh);
-	 pucks.push(puck6);
   
    
    

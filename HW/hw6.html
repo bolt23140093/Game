@@ -40,7 +40,7 @@ function BuildAgent(){
 	
   let pos = new THREE.Vector3(-30,-10,0);
   let mesh = new THREE.Mesh (new THREE.CircleGeometry(1,20), new THREE.MeshBasicMaterial({color:'cyan'}));
-  mesh.material.color = new THREE.Color().setHSL (Math.random(), 0.5, .7);
+  mesh.material.color = new THREE.Color().setHSL (0.5, 0.5, .7);
 
 	
 	let agent = new Agent (pos, mesh);

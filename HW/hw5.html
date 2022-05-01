@@ -63,7 +63,7 @@ class Agent {
     this.mesh.material.color = new THREE.Color().setHSL (Math.random(), 0.5, .7);
     scene.add (mesh);
     this.light = new THREE.PointLight( this.mesh.material.color, 0.7);
-    this.MAXSPEED = 50;
+    this.MAXSPEED = 30;
     this.ARRIVAL_R = 30;
     this.nbhd = [];
     // for orientable agent
